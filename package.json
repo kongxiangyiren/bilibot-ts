@@ -1,0 +1,23 @@
+{
+  "name": "bilibot-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "model": "ollama create bilibot -f bilibot.Modelfile",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc && tsc-alias",
+    "data":"ts-node src/data.ts"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.14.2",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "ollama": "^0.5.1"
+  }
+}
